@@ -39,7 +39,7 @@
         android:inputType="number"
         android:ems="10"
         android:layout_marginTop="40dp"
-        android:id="@+id/editText9"
+        android:id="@+id/edit_cod_validacao"
         android:hint="Digite o código!"
         android:textAlignment="center"
         android:textColor="@color/textColorPrimary"
@@ -64,10 +64,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
-        android:id="@+id/button3"
+        android:id="@+id/btn_validacao"
         android:textColor="@color/textColorPrimary"
         android:background="@color/colorPrimaryDark"
-        android:layout_below="@+id/editText9"
+        android:layout_below="@+id/edit_cod_validacao"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
