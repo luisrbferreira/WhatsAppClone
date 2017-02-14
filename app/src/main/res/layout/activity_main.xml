@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -11,13 +10,5 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="br.com.luisferreira.whatsappclone.activity.MainActivity">
 
-    <ImageView
-        android:layout_height="@dimen/altura_logo"
-        app:srcCompat="@drawable/logo"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/imageView"
-        android:layout_width="@dimen/largura_logo"
-        android:contentDescription=""
-        tools:ignore="ContentDescription" />
+
 </RelativeLayout>
