@@ -1,5 +1,6 @@
 package br.com.luisferreira.whatsappclone.activity;
 
+import android.Manifest;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.telephony.SmsManager;
@@ -13,6 +14,7 @@ import com.github.rtoshiro.util.format.text.MaskTextWatcher;
 import java.util.Random;
 
 import br.com.luisferreira.whatsappclone.R;
+import br.com.luisferreira.whatsappclone.helper.Permissao;
 import br.com.luisferreira.whatsappclone.helper.Preferencias;
 
 public class LoginActivity extends AppCompatActivity {
@@ -22,11 +24,17 @@ public class LoginActivity extends AppCompatActivity {
     private EditText codPais;
     private EditText codDDD;
     private Button cadastrar;
+    private String[] permissoesNecessarias = new String[]{
+            Manifest.permission.SEND_SMS,
+            Manifest.permission.INTERNET
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        Permissao.validaPermissoes(1, this, permissoesNecessarias);
 
         nome = (EditText) findViewById(R.id.edit_nome);
         telefone = (EditText) findViewById(R.id.edit_telefone);
